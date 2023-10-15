@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif
+
+}
+
+
+
+.main {
+  position: sticky;
+   top: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  z-index: 8;
+ 
+   
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.nav1{
+  margin-left: 30px;
+}
+
+
+li {
+display: inline-block;
+margin-left: 30px;
+font-weight: bolder;
+}
+
+ a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+ a:hover {
+  color: #eb0f0f;
+}
+
+.nav2 {
+  display: flex;
+  gap: 16px;
+}
+
+.phone-icon {
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  color: black;
+  font-size: 16px;
+}
+
+.cart-icon {
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+
+}
+.menu {
+  display: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+ 
+  
+}
+
+.food {
+  background-image: url("img1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+.content {
+  font-family: sans-serif;
+  padding: 42px;
+  color: white;
+  position: relative;
+  top: 23%;
+  left: 5.5%;
+  transform: translateY(-50%, -50%);
+  width: 80%;
+  max-width: 580px;
+  height: auto;
+  background-color: rgba(252, 101, 101, 0.511);
+}
+
+
+.content p {
+  line-height:18px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.order {
+  
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ec3da6fe, #f7e548);
+  height: 140vh;
+ 
+}
+
+.order h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 8px;
+  padding: 80px 0;
+
+}
+
+.card-grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.5s, transform 0.5s;
+  border-radius: 0px 18%;
+  height:auto;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  border-radius: 0 18%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+ 
+}
+
+
+
+
+.order button {
+  border: 2px solid #f0f0f0;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 24px;
+  padding: 20px;
+  width: 13%;
+  display: block;
+  margin: 90px auto;
+  border: none;
+  background-color: rgba(249, 244, 244, 0.506);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 10px rgba(246, 245, 245, 0.3);
+  font-weight: 600;
+}
+
+.card h2 {
+  animation: drop-in 1s ease 200ms backwards;
+ }
+
+.order h1  {
+  animation: drop-in 1200ms ease 500ms backwards;
+ }
+ 
+ @keyframes drop-in {
+  from {
+   opacity: 0;
+   transform: translateY(-100px);
+  }
+  to {
+   opacity: 1;
+   transform: translate(0px);
+  }
+ }
+
+/* Media Query for Phones */
+@media (max-width: 767px) {
+  .nav1 {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .order {
+    height: auto; 
+    padding-bottom: 20px; 
+  }
+
+  .order h1 {
+    font-size: 2.5rem; 
+    padding: 50px 0; 
+  }
+  .card-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .card {
+    padding: 20px;
+    height: auto; 
+  }
+
+  .card p {
+    font-size: 12px; 
+    
+    overflow: hidden;
+  }
+
+  .order button {
+    width: 60%; 
+    font-size: 18px; 
+    padding: 15px 0; 
+    margin: 50px auto;
+  }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav1 {
+    display: none; 
+  }
+  .menu {
+    display: block; 
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  /* Adjust other styles for tablet size here */
+  .order {
+    height: auto; 
+    padding-bottom: 30px; 
+  }
+
+  .order h1 {
+    font-size: 2.5rem; 
+    padding: 50px 0; 
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: center; 
+  }
+
+  .card p {
+    font-size: 16px; 
+    overflow: hidden;
+
+  }
+
+  .order button {
+    width: 50%; 
+    font-size: 20px; 
+    padding: 15px; 
+    margin: 50px auto;
+  }
+}
