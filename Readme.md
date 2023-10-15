@@ -1,4 +1,4 @@
- This code appears to be an example of a static webpage, and it contains various elements like navigation, images, text, and styling. It's structured in HTML, and it includes some CSS for styling.
+This code appears to be an example of a static webpage, and it contains various elements like navigation, images, text, and styling. It's structured in HTML, and it includes some CSS for styling.
 
 Here's a brief overview of what this code does:
 
@@ -16,3 +16,4 @@ It provides information about finalists in a table.
 
 It includes a footer with copyright information.
 
+"Without JavaScript, table sorting and navigation button click will make the navigation div appear."
