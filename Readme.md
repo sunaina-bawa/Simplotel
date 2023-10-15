@@ -1,19 +1,33 @@
-This code appears to be an example of a static webpage, and it contains various elements like navigation, images, text, and styling. It's structured in HTML, and it includes some CSS for styling.
+# Simplotel Website
 
-Here's a brief overview of what this code does:
+This is a sample HTML code for a website designed for Simplotel. The website includes a navigation bar, information about the business, and an order section.
 
-It defines the structure of an HTML document using standard HTML elements and tags.
+## Table of Contents
 
-It includes a header section with a navigation bar, a logo, and a menu icon.
+- [Description](#description)
+- [Usage](#usage)
 
-It defines sections with content related to travel and tourism.
 
-It uses CSS for styling, including fonts, colors, and layout.
+## Description
 
-It contains images and details about winners in a specific category.
+This HTML code represents a simple website layout for Simplotel. It includes the following components:
 
-It provides information about finalists in a table.
+- A navigation bar with links to various sections of the website.
+- A section providing information about Simplotel.
+- An "Order Now" section with three cards representing different food items.
+- A "Order" button.
 
-It includes a footer with copyright information.
+The website is designed for informational purposes and as a template for further development.
 
-"Without JavaScript, table sorting and navigation button click will make the navigation div appear."
+## Usage
+
+You can use this code as a starting point for building a website for Simplotel. To use this code:
+
+1. Create an HTML file and copy the code into it.
+2. Modify the content and styles as needed to suit your specific requirements.
+3. Link your CSS file(s) and update the image sources.
+4. Test the website in different web browsers to ensure compatibility.
+
+
+
+Happy coding!
